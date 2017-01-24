@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        $("#next").click(function (event) {
+            $("#submit").click();
+        })
+        $("#next").click(function (event) {
+            if (event.keyCode == 13) {
+                $("#submit").click();
+            }
+        })
+        location.href = "#target";
+    </script>
+
+    <meta charset="UTF-8">
+
+    <link rel="shortcut icon" href="/static/img/icon.ico">
+    <link rel="bookmark" href="/static/img/icon.ico">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!-- Uses a header that scrolls with the text, rather than staying locked at the top -->
+    <div class="mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header mdl-layout__header--scroll">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title" href="http://goingmyway.cn:5000">A simple CNN multi-digits recognizer based on TensorFlow</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="http://goingmyway.cn">Home</a>
+                    <a class="mdl-navigation__link" href="http://flask.pocoo.org/">Flask</a>
+                    <a class="mdl-navigation__link" href="http://www.tensorflow.org/">TensorFlow</a>
+                </nav>
+            </div>
+        </header>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <!-- Your content goes here -->
+                <center>
+                    <p>
+                        <h3>The simple web-app is base on <a href="https://arxiv.org/abs/1312.6082">Goodfelow's paper</a></h3>
+                    </p>
+                    <form action="/" method="POST" enctype="multipart/form-data">
+                        <input id="submit" type="file" value="file" name="file" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" />
+                        <input type="submit" name="submit"  value="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" />
+                    </form>
+
+                    <p>
+                        <h4>Examples</h4>
+                    </p>
+
+                    <table>
+                        <tr>
+                            <td><img src="/static/img/sample/1.png" style="width:96px;height:96px;" border=0></td>
+                            <td><img src="/static/img/sample/2.png" style="width:96px;height:96px;" border=0></td>
+                            <td><img src="/static/img/sample/3.png" style="width:96px;height:96px;" border=0></td>
+                            <td><img src="/static/img/sample/4.png" style="width:96px;height:96px;" border=0></td>
+                        </tr>
+                        <tr>
+
+                            <td><img src="/static/img/sample/5.png" style="width:96px;height:96px;" border=0></td>
+                            <td><img src="/static/img/sample/6.png" style="width:96px;height:96px;" border=0></td>
+                            <td><img src="/static/img/sample/7.png" style="width:96px;height:96px;" border=0></td>
+                            <td><img src="/static/img/sample/8.png" style="width:96px;height:96px;" border=0></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/static/img/sample/9.png" style="width:96px;height:96px;" border=0></td>
+                            <td><img src="/static/img/sample/10.png" style="width:96px;height:96px;" border=0></td>
+                            <td><img src="/static/img/sample/11.png" style="width:96px;height:96px;" border=0></td>
+                            <td><img src="/static/img/sample/12.png" style="width:96px;height:96px;" border=0></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/static/img/sample/13.png" style="width:96px;height:96px;" border=0></td>
+                            <td><img src="/static/img/sample/14.png" style="width:96px;height:96px;" border=0></td>
+                            <td><img src="/static/img/sample/15.png" style="width:96px;height:96px;" border=0></td>
+                            <td><img src="/static/img/sample/16.png" style="width:96px;height:96px;" border=0></td>
+                        </tr>
+                    </table>
+
+                </center>
+            </div>
+        </main>
+
+        <footer id="colophon" class="mdl-mega-footer" role="contentinfo">
+            <div class="mdl-mega-footer--bottom-section">
+                <div class="mdl-logo">
+                    About
+                </div>
+                <ul class="mdl-mega-footer--link-list">
+                    <li><a target="_blank" href="https://github.com/goingmyway">Github</a></li>
+                </ul>
+            </div>
+
+            <!-- #colophon -->
+        </footer>
+
+    </div>
+
+</head>
+<body>
+
+</body>
